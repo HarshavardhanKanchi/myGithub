@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:id="@+id/drawerLayout"
+    android:background="@drawable/gradient_admin">
+
+    <include
+        android:id="@+id/action_bar"
+        layout="@layout/actionbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/tab_bar"
+        layout="@layout/actionbar_layout"
+        android:layout_below="@+id/action_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="49dp" />
+
+
+    <LinearLayout
+        android:id="@+id/tabsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/action_bar"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/textViewProfile"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nunito_semibold"
+            android:padding="15dp"
+            android:text="Profile"
+            android:textColor="#fdfdfd"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewUsers"
+            android:layout_width="188dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/nunito_semibold"
+            android:padding="15dp"
+            android:text="Users"
+            android:textColor="#fdfdfd"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="455dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="112dp">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

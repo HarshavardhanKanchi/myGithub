@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/actionbar_layout"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        tools:ignore="UnknownId">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#333">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="203dp"
+                android:ems="10"
+                android:hint="Enter Name"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#333">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="203dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleDrawable="@drawable/ic_action_view"
+            app:passwordToggleEnabled="true"
+
+            app:passwordToggleTint="#333">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Set Password"
+                android:inputType="textPassword"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#333">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:inputType="phone"
+                 />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerState"
+        android:layout_width="153dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="209dp"
+        android:layout_marginStart="14dp"
+        android:entries="@array/list_state" />
+
+    <Spinner
+        android:id="@+id/spinnerDistrict"
+        android:layout_width="153dp"
+        android:layout_height="40dp"
+
+        android:layout_alignStart="@+id/spinnerState"
+        android:layout_below="@+id/spinnerState"
+        android:layout_marginTop="-209dp"
+        android:entries="@array/list_district" />
+
+    <Spinner
+        android:id="@+id/spinnerMandal"
+        android:layout_width="153dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/spinnerState"
+        android:layout_marginEnd="15dp"
+        android:entries="@array/list_mandal"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerPanchayat"
+        android:layout_width="153dp"
+        android:layout_height="40dp"
+
+        android:layout_alignStart="@+id/spinnerMandal"
+        android:layout_below="@+id/spinnerState"
+        android:layout_marginTop="-209dp"
+
+        android:entries="@array/list_panchayat" />
+
+    <Spinner
+        android:id="@+id/spinnerVillage"
+        android:layout_width="153dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/spinnerDistrict"
+        android:layout_marginEnd="105dp"
+
+        android:entries="@array/list_village" />
+
+    <Button
+        android:id="@+id/buttonSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="57dp"
+        android:background="#5a74a6"
+        android:text="signup"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/textViewSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:onClick="onClickToLogin"
+        android:text="Already have an account?"
+        android:textSize="15dp" />
+
+
+
+</RelativeLayout>

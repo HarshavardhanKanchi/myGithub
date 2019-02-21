@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">SolVillage</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="type_message">TypeMessage</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="all_users">All Users</string>
+    <string name="profile">Profile</string>
+
+    <array name="list_state">
+        <item>- Select State -</item>
+        <item>AP</item>
+
+    </array>
+    <array name="list_district">
+        <item>- Select District -</item>
+        <item>Anantapur</item>
+        <item>Chittoor</item>
+        <item>East Godavari</item>
+        <item>Guntur</item>
+        <item>Kadapa</item>
+        <item>Krishna</item>
+        <item>Kurnool</item>
+        <item>Nellore</item>
+        <item>Prakasam</item>
+        <item>Srikakulam</item>
+        <item>Visakhapatnam</item>
+        <item>Vizianagaram</item>
+        <item>West Godavari</item>
+    </array>
+    <array name="list_mandal">
+        <item>- Select Mandal -</item>
+        <item>Mandal1</item>
+        <item>Mandal2</item>
+        <item>Mandal3</item>
+    </array>
+
+    <array name="list_panchayat">
+        <item>- Select Panchayat -</item>
+        <item>panchayat1</item>
+        <item>panchayat2</item>
+        <item>panchayat3</item>
+        <item>panchayat4</item>
+    </array>
+    <array name="list_village">
+        <item>- Select Village -</item>
+        <item>vlg1</item>
+        <item>vlg2</item>
+        <item>vlg3</item>
+        <item>vlg4</item>
+    </array>
+    <array name="users">
+
+        <item>President</item>
+        <item>User</item>
+        <item>Admin</item>
+    </array>
+    <array name="problem_status_president">
+        <item>-Problem Status-</item>
+        <item>Pending</item>
+        <item>Inprogress</item>
+        <item>Solved</item>
+    </array>
+    <array name="problem_status_user">
+        <item>Pending</item>
+    </array>
+
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/post_background"
+
+    tools:context=".UserProfileActivity">
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar_layout"
+        android:visibility="visible"
+        android:id="@+id/action_bar"
+        />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="149dp"
+        android:layout_height="155dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:src="@drawable/profile3"
+        app:civ_border_color="#4d6493"
+        app:civ_border_width="4dp" />
+
+
+    <TextView
+        android:id="@+id/textView_person_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="252dp"
+        android:gravity="center"
+        android:hint="Person Name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView_village_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_person_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="160dp"
+        android:gravity="center"
+        android:hint="Village"
+        android:textSize="14dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="188dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#b6b6b6" />
+
+        <TextView
+            android:id="@+id/textView_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="33dp"
+            android:text="Change Password"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#b6b6b6" />
+
+        <TextView
+            android:id="@+id/textView_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="33dp"
+            android:text="Log Out"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#b6b6b6" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="184dp"
+        app:srcCompat="@drawable/ic_action_user_password" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="120dp"
+        app:srcCompat="@drawable/ic_action_user_logout" />
+
+    <ImageView
+        android:id="@+id/image_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_alignEnd="@+id/profile_image"
+        app:srcCompat="@drawable/ic_action_edit" />
+
+</RelativeLayout>

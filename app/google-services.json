@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "961405545784",
+    "firebase_url": "https://solvillage-19f06.firebaseio.com",
+    "project_id": "solvillage-19f06",
+    "storage_bucket": "solvillage-19f06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961405545784:android:26e0c05e44198e74",
+        "android_client_info": {
+          "package_name": "com.example.rgukt.myproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961405545784-ako8pmmf11fptgl8gct4j7udf3fmhqjv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rgukt.myproject",
+            "certificate_hash": "7586bbb8bf8bac37250ebcf7d72e097bd88ddd79"
+          }
+        },
+        {
+          "client_id": "961405545784-6hu4dk74lfmav756vh7vdjrifte73q1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg98Vcp0OTbFiefMS9OUvFrwrgBgMVLC0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961405545784-6hu4dk74lfmav756vh7vdjrifte73q1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

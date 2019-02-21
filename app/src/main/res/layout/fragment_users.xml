@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".UsersFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#d4d3d3">
+
+        <TextView
+            android:layout_width="353dp"
+            android:layout_height="535dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="15dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/adduser"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/ic_action_personadd"
+            app:backgroundTint="#5572b7"
+            app:fabSize="normal" />
+
+        <ListView
+            android:id="@+id/listView_President"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

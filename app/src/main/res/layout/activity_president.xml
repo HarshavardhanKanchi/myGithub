@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PresidentActivity">
+
+    <include
+        layout="@layout/actionbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible" />
+
+
+    <ListView
+        android:id="@+id/listView_Problem"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="51dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/profile3"
+        app:civ_border_color="#0d0e0e"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/textView_chat_president"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="14dp"
+        android:text="CHAT"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+
+</RelativeLayout>
